@@ -1,0 +1,732 @@
+@media (min-width: 1660px) {
+    /*Ebene 5: Quality*/
+    #ebeneQuality #beschreibungContainerQuality {
+        width: 580pxF;
+    }
+}
+
+@media (max-width: 1200px) {
+    /*Header*/
+    .titleContainer {
+        top: 100px;
+    }
+    header {
+        height: 500px;
+    }
+    /*Ebene 2: Pleasure*/
+    #beschreibungContainerPleasure {
+        padding-left: 30px;
+        width: 40%;
+    }
+    #beschreibungContainerPleasure .textkoerper {
+        width: 100%;
+        font-size: 20px;
+    }
+    #bildPralinenContainerPleasure {
+        max-width: 50%;
+    }
+    #bildPralinenContainerPleasure img {
+        padding-right: 30px;
+    }
+    /*Ebene 4: Variety*/
+    .ebeneVarietyHeader .textkoerper {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .geschmacksrichtung .textkoerper {
+        width: 235px;
+    }
+    .ebeneContainerQuality {
+        padding-bottom: 100px;
+    }
+    /*Ebene 5: Quality*/
+    #beschreibungContainerQuality {
+        width: 40%;
+        padding-left: 30px;
+    }
+    #beschreibungContainerQuality .textkoerper {
+        width: 105%;
+    }
+    #bildPralinenContainerQuality {
+        max-width: 50%;
+    }
+    #bildPralinenContainerQuality img {
+        padding-right: 30px;
+    }
+    /*Ebene 8:Footer*/
+    .footerNewsletter {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1023px) {
+    /*Header*/
+    header {
+        height: 400px;
+    }
+    .titleContainer {
+        top: 100px;
+    }
+    .title {
+        font-size: 55px;
+        height: 20px;
+    }
+    #trennlinieHeader {
+        width: 150px;
+    }
+    .subtitle {
+        max-width: 550px;
+        padding-left: 50px;
+        padding-right: 50px;
+        line-height: 22px;
+        font-size: 16px;
+    }
+    .menue {
+        background-color: transparent;
+    }
+    /*Typografie*/
+    .textkoerper {
+        font-size: 18px;
+    }
+    .ueberschrift {
+        font-size: 32px;
+    }
+    /*Banner*/
+    .ebeneBanner3 {
+        background-image: url(banner_44.png);
+    }
+    .ebeneBanner2 {
+        background-image: url(banner_33.png);
+    }
+    /*Ebene 2: Pleasure*/
+    #ebeneContainerPleasure {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    #beschreibungContainerPleasure .ueberschrift {
+        margin-top: 50px;
+        font-size: 32px;
+    }
+    #beschreibungContainerPleasure .textkoerper {
+        font-size: 18px;
+    }
+    /*Ebene 4: Variety*/
+    .ebeneContainerVariety {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    .ebeneVarietyHeader .textkoerper {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-bottom: 50px;
+    }
+    .geschmacksrichtung {
+        flex-basis: 50%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    .geschmacksrichtung .unterueberschrift {
+        opacity: 1;
+    }
+    .geschmacksrichtung .textkoerper {
+        opacity: 1;
+        height: 100%;
+        width: 270px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .geschmacksrichtung:hover {
+        transform: scale(1, 1);
+    }
+    /*Ebene 5: Quality*/
+    .ebeneContainerQuality {
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+    #beschreibungContainerQuality .ueberschrift {
+        margin-top: 70px;
+        font-size: 32px;
+    }
+    /*Ebene 7: Kaufaufforderung*/
+    .ebeneKaufaufforderung {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .ebeneKaufaufforderung img {
+        width: 350px;
+    }
+    .button {
+        font-size: 16px;
+        padding: 8px;
+        width: 100px;
+    }
+    /*Footer */
+    footer {
+        flex-direction: column;
+    }
+    .footerMenueContainer {
+        justify-content: center;
+    }
+    .footerNewsletterContainer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .footerNewsletter {
+        width: 550px;
+    }
+    .footerNewsletter h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 770px) {
+    /*Header*/
+    header {
+        background-image: url(header2.png);
+        height: 350px;
+    }
+    .titleContainer {
+        top: 80px;
+    }
+    .title {
+        font-size: 45px;
+        height: 20px;
+    }
+    #trennlinieHeader {
+        width: 150px;
+    }
+    .subtitle {
+        margin-top: 5px;
+    }
+    .logo {
+        top: 10px;
+        width: 120px;
+    }
+    svg {
+        width: 16px;
+    }
+    .iconsContainer {
+        top: 20px;
+    }
+    /*Navigationsleiste*/
+    .menue {
+        position: fixed;
+        top: -15px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #f2f2f2f6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+        z-index: 1;
+        width: 100%;
+        height: 0;
+        transition: 0.3s ease-in;
+    }
+    .menueInhalt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+    }
+    .menuepunkt {
+        padding-bottom: 40px;
+    }
+    .menuetext {
+        color: #1b1b1b;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .mobileSuchleiste {
+        background-color: #f2f2f2f6;
+        display: flex;
+        position: absolute;
+        height: 20%;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+        background-color: #1b1b1b;
+        ;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+    }
+    #suche {
+        background-image: url('sucheIcon.png');
+        background-size: 25px;
+        background-position: 5px 5px;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid white;
+        ;
+        width: 350px;
+        padding: 12px 20px 12px 40px;
+        color: white;
+    }
+    .menue.active {
+        height: 100%;
+    }
+    ul.menue.active::after {
+        display: none;
+    }
+    .closeMenue {
+        cursor: pointer;
+        position: absolute;
+        display: block;
+        top: 15px;
+        right: 45px;
+        font-size: 30px;
+        color: black
+    }
+    .iconBurger {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        top: 5px;
+        right: 30px;
+        cursor: pointer;
+    }
+    .iconBurger img {
+        width: 25px;
+        height: 15px;
+    }
+    .iconBurger.active {
+        background-color: transparent;
+        top: 5px;
+        right: 30px;
+    }
+    .iconBurger.active::after {
+        display: none;
+    }
+    .iconMenu {
+        cursor: pointer;
+        padding-right: 10px;
+        font-size: 14px;
+        color: white;
+        font-family: Segoe WPC, Segoe UI, Yu Gothic UI, Meiryo, sans-serif;
+    }
+    .iconsContainer {
+        left: 5px;
+    }
+    .iconSuche {
+        display: none;
+    }
+    #navigation:hover {
+        background-color: transparent;
+    }
+    /*Typografie*/
+    .textkoerper {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .ueberschrift {
+        font-size: 26px;
+    }
+    /*Banner*/
+    .ebeneBanner1,
+    .ebeneBanner2,
+    .ebeneBanner3 {
+        height: 500px;
+        background-attachment: local;
+    }
+    /*Ebene 2: Pleasure*/
+    #beschreibungContainerPleasure .textkoerper {
+        font-size: 16px;
+    }
+    #beschreibungContainerPleasure .ueberschrift {
+        font-size: 26px;
+    }
+    /*Ebene 4: Variety*/
+    .geschmacksrichtung .textkoerper {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+        line-height: 25px;
+        width: 225px;
+    }
+    .bildContainer img {
+        width: 150px;
+    }
+    .ebeneVarietyHeader .textkoerper {
+        font-size: 16px;
+    }
+    /*Ebene 5: Gucci macht den Unterschied */
+    .ebeneSlider .textkoerper {
+        max-width: 300px;
+        height: 100px;
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    .sliderIcon {
+        width: 150px;
+    }
+    span.linien.active::after {
+        display: none;
+    }
+    .pfeilVor,
+    .pfeilNext {
+        width: 20%;
+        font-weight: 80;
+        font-size: 30px;
+    }
+    .linien {
+        width: 50px;
+    }
+    .ebeneKaufaufforderung img {
+        width: 280px;
+    }
+    /*Ebene 7: Kaufaufforderung*/
+    .ebeneKaufaufforderung h1 {
+        max-width: 500px;
+    }
+    /* Footer */
+    footer {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .footerMenueContainer {
+        flex-direction: column;
+    }
+    .menueBlock {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .menueListeContainer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+    }
+    .accordion {
+        font-size: 20px;
+    }
+    .accordion:after {
+        content: '\02795';
+        color: #999999;
+        margin-top: 5px;
+        font-size: 15px;
+        ;
+        float: right;
+    }
+    .active:after {
+        content: "\2796";
+    }
+    #trennlinieFooter {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 0.5px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #999999;
+        border: 0 none;
+    }
+    .footerNewsletterContainer {
+        justify-content: left;
+        padding-top: 0px;
+    }
+    .footerNewsletter {
+        width: 100%;
+        text-align: left;
+        padding-left: 50px;
+        color: #999999;
+        padding-bottom: 10px;
+    }
+    .footerNewsletter p {
+        margin-top: 20px;
+    }
+    .footerNewsletter h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    /*Ebene: Header*/
+    header {
+        height: 250px;
+    }
+    .titleContainer {
+        top: 45px;
+    }
+    .title {
+        font-size: 40px;
+        height: 20px;
+    }
+    #trennlinieHeader {
+        display: none;
+    }
+    .subtitle {
+        font-size: 14px;
+    }
+    #wunschliste,
+    #anmelden,
+    #warenkorb,
+    #suchen {
+        margin-left: 20px;
+    }
+    #suche {
+        width: 250px;
+    }
+    /*Banner*/
+    .ebeneBanner1,
+    .ebeneBanner2,
+    .ebeneBanner3 {
+        height: 350px;
+    }
+    /*Ebene 1: Limitierte Edition*/
+    #ebeneLimitierteEdition {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .limitierteEditionInhalt {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /*Ebene 2: Pleasure*/
+    #ebenePleasure {
+        flex-direction: column;
+    }
+    #ebeneContainerPleasure {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #beschreibungContainerPleasure {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        width: 90%;
+    }
+    #beschreibungContainerPleasure .ueberschrift {
+        margin-top: 100px;
+    }
+    #beschreibungContainerPleasure .textkoerper {
+        text-align: center;
+    }
+    #bildPralinenContainerPleasure {
+        max-width: 80%;
+    }
+    #bildPralinenContainerPleasure img {
+        padding-top: 25px;
+        padding-right: 0px;
+    }
+    /*Ebene 4: Variety*/
+    .ebeneContainerVariety {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .ebeneVarietyHeader .textkoerper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /*Ebene 5: Quality*/
+    #ebeneQuality {
+        flex-direction: column-reverse;
+    }
+    .ebeneContainerQuality {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #ebeneQuality #beschreibungContainerQuality {
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: center;
+        width: 90%;
+    }
+    #beschreibungContainerQuality .ueberschrift {
+        margin-top: 100px;
+    }
+    #beschreibungContainerQuality .textkoerper {
+        text-align: center;
+        width: 100%;
+    }
+    #bildPralinenContainerQuality {
+        min-width: 60%;
+    }
+    #bildPralinenContainerQuality img {
+        padding-top: 25px;
+        padding-right: 0px;
+        width: 100%;
+    }
+    /*Ebene 5: Gucci macht den Unterschied */
+    .pfeilVor,
+    .pfeilNext {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    /*Header*/
+    header {
+        height: 200px;
+    }
+    .titleContainer {
+        top: 30px;
+    }
+    .title {
+        font-size: 35px;
+        height: 20px;
+    }
+    .subtitle {
+        margin-top: -5px;
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .ebeneVarietyHeader .textkoerper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .logo {
+        top: 13px;
+        width: 90px;
+    }
+    svg {
+        width: 14px;
+    }
+    .iconsContainer {
+        top: 20px;
+    }
+    #wunschliste,
+    #anmelden,
+    #warenkorb,
+    #suchen {
+        margin-left: 15px;
+    }
+    .iconMenu {
+        display: none;
+    }
+    .iconBurger {
+        top: 23px;
+        right: 20px;
+    }
+    .iconBurger img {
+        width: 22px;
+        height: 12px;
+    }
+    .menuetext {
+        font-size: 18px;
+    }
+    #suche {
+        width: 200px;
+    }
+    /*Typografie*/
+    .textkoerper {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .ueberschrift {
+        font-size: 22px;
+    }
+    /*Banner*/
+    .ebeneBanner1,
+    .ebeneBanner2,
+    .ebeneBanner3 {
+        height: 230px;
+    }
+    /*Ebene 1: Limitierte Edition*/
+    #ebeneLimitierteEdition {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    /*Ebene 2: Pleasure*/
+    #beschreibungContainerPleasure .textkoerper {
+        font-size: 12px;
+    }
+    #beschreibungContainerPleasure .ueberschrift {
+        font-size: 22px;
+    }
+    /*Ebene 4: Variety*/
+    .geschmacksrichtung .textkoerper {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .ebeneVarietyHeader .textkoerper {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .bildContainer img {
+        width: 120px;
+    }
+    /*Ebene 5: Quality*/
+    #bildPralinenContainerQuality {
+        min-width: 70%;
+    }
+    #bildPralinenContainerQuality img {
+        padding-top: 25px;
+        padding-right: 0px;
+        width: 100%;
+    }
+    /*Ebene 6: Gucci macht den Unterschied */
+    .ebeneSlider .textkoerper {
+        max-width: 250px;
+        height: 70px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .ebeneSlider .ueberschrift {
+        max-width: 200px;
+        line-height: 1.5;
+    }
+    .sliderIcon {
+        width: 120px;
+        margin-top: -15px;
+    }
+    /*Ebene 7: Kaufaufforderung*/
+    .ebeneKaufaufforderung {
+        padding-top: 40px;
+    }
+    .ebeneKaufaufforderung img {
+        width: 200px;
+    }
+    .ebeneKaufaufforderung .textkoerper {
+        font-size: 14px;
+    }
+    .button {
+        font-size: 14px;
+        padding: 8px;
+        width: 100px;
+    }
+    /* Footer */
+    footer {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .menueBlock {
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    .accordion {
+        font-size: 14px;
+    }
+    .accordion:after {
+        margin-top: 0px;
+        font-size: 12px;
+        ;
+    }
+    .footerNewsletter p {
+        margin-top: 10px;
+        max-width: 200px;
+        font-size: 10px;
+    }
+    .footerNewsletter h2 {
+        font-size: 14px;
+    }
+    #email {
+        margin-top: 10px;
+        width: 180px;
+    }
+    a {
+        font-size: 12px;
+    }
+}

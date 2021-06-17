@@ -1,0 +1,765 @@
+body {
+    min-width: 100%;
+    text-align: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.objektFade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.objektFadeSichtbar {
+    opacity: 1;
+}
+
+
+/*Inhalt des Headers*/
+
+header {
+    background-image: url(header.jpg);
+    height: 650px;
+    background-position: left center;
+    background-size: cover;
+    background-color: #c2c2c2;
+}
+
+.headerTitle {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 160px;
+}
+
+.title {
+    height: 40px;
+    cursor: default;
+    font-size: 70px;
+    color: white;
+    font-family: Segoe WPC, Segoe UI, Yu Gothic UI, Meiryo, sans-serif;
+    font-weight: lighter;
+}
+
+#trennlinieHeader {
+    width: 200px;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    border: 0 none;
+}
+
+.subtitle {
+    cursor: default;
+    max-width: 750px;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 25px;
+}
+
+
+/*Navigationsleiste*/
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.logo {
+    position: absolute;
+    top: 5px;
+    width: 160px;
+}
+
+.menueContainer {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    font-family: Segoe WPC, Segoe UI, Yu Gothic UI, Meiryo, sans-serif;
+}
+
+.menue {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 60px;
+}
+
+.menuepunkt {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    display: inline;
+    padding: 10px;
+}
+
+.menuepunkt:hover {
+    cursor: pointer;
+}
+
+.menuepunkt:hover svg {
+    opacity: 1;
+}
+
+.menuetext {
+    margin-bottom: -2px;
+    transition: 0.2s ease-out;
+    font-weight: 700;
+}
+
+.menuetext:hover {
+    color: #707070;
+    transition: 0.2s ease-in;
+}
+
+.iconBurger {
+    display: none;
+}
+
+.closeMenue {
+    display: none;
+}
+
+.dreieckOutline,
+.dreieckFüllung {
+    fill: rgb(255, 255, 255);
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 6px;
+}
+
+.dreieck {
+    opacity: 0;
+}
+
+.iconsContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 10px;
+    right: 30px;
+}
+
+.icon {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.8);
+    stroke-width: 4px;
+}
+
+#anmelden:hover svg g path,
+#wunschliste:hover svg g path,
+#warenkorb:hover svg g path {
+    cursor: pointer;
+    stroke: #707070;
+    transition: 0.2s ease-in;
+}
+
+#anmelden svg g path,
+#wunschliste svg g path,
+#warenkorb svg g path {
+    transition: 0.2s ease-out;
+}
+
+#suchen:hover .lupe {
+    stroke: #707070;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+#suchen:hover .kreis {
+    fill: #707070;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.iconSuche,
+.lupe {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.8);
+    stroke-width: 5px;
+    transition: 0.2s ease-out;
+}
+
+.iconSuche .kreis {
+    stroke: none;
+    fill: rgba(255, 255, 255, 0.8);
+    stroke-width: 6px;
+    transition: 0.2s ease-out;
+}
+
+#wunschliste,
+#anmelden,
+#warenkorb,
+#suchen {
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+#navigation {
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(to top, transparent 20%, #111111 100%);
+    width: 100%;
+    height: 125px;
+    transition: 0.2s ease-out;
+}
+
+#navigation:hover {
+    background-color: #1b1b1b;
+    transition: 0.2s ease all;
+}
+
+.mobileSuchleiste {
+    display: none;
+}
+
+
+/*Body*/
+
+
+/*Typografie*/
+
+.ueberschrift {
+    cursor: default;
+    font-family: Segoe WPC, Segoe UI, Yu Gothic UI, Meiryo, sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+    color: #1b1b1b;
+    letter-spacing: 3px;
+}
+
+.textkoerper {
+    cursor: default;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 20px;
+    color: #707070;
+    line-height: 30px;
+    max-width: 750px;
+}
+
+.hashtag {
+    cursor: default;
+    font-family: Segoe WPC, Segoe UI, Yu Gothic UI, Meiryo, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #707070;
+}
+
+.unterueberschrift {
+    cursor: default;
+    font-family: Segoe WPC, Segoe UI, Yu Gothic UI, Meiryo, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1b1b1b;
+}
+
+.trennlinieBody {
+    margin-top: -5px;
+    width: 130px;
+    height: 0.5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #707070;
+    border: 0 none;
+}
+
+
+/*Ebene 1: Limitierte Edition*/
+
+#ebeneLimitierteEdition {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 130px;
+    background-color: white;
+}
+
+.limitierteEditionInhalt {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+/*Ebene 2: Pleasure*/
+
+#ebeneContainerPleasure {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f2f2f2;
+}
+
+#ebenePleasure {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#beschreibungContainerPleasure {
+    width: 35%;
+    text-align: left;
+    align-items: center;
+    margin-top: -100px;
+    margin-bottom: 0px;
+    padding-left: 100px;
+}
+
+#beschreibungContainerPleasure .textkoerper {
+    width: 450px;
+    ;
+}
+
+#bildPralinenContainerPleasure {
+    max-width: 45%;
+}
+
+#bildPralinenContainerPleasure img {
+    max-width: 95%;
+}
+
+
+/*Banner*/
+
+.ebeneBanner1 {
+    background-image: url('banner_2.png');
+    max-width: 100%;
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ebeneBanner2 {
+    background-image: url('banner_3.png');
+    max-width: 100%;
+    height: 700px;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ebeneBanner3 {
+    background-image: url('banner_4.png');
+    max-width: 100%;
+    height: 700px;
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*Ebene 4: Variety*/
+
+.ebeneContainerVariety {
+    width: 100%;
+    height: 100%;
+    padding-top: 90px;
+    padding-bottom: 60px;
+    background-color: #f2f2f2;
+}
+
+#ebeneVariety {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ebeneVarietyHeader .textkoerper {
+    margin-bottom: 80px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#geschmackrichtungenContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    vertical-align: top;
+    justify-content: center;
+}
+
+.geschmacksrichtung {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.5s ease-out;
+    top: 0px;
+}
+
+.geschmacksrichtung:hover {
+    transform: scale(1.2, 1.2);
+    transition: 0.5s ease all;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.bildContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bildContainer img {
+    bottom: 0px;
+    width: 180px;
+}
+
+.geschmacksrichtung .unterueberschrift {
+    opacity: 0;
+}
+
+.geschmacksrichtung .textkoerper {
+    margin-top: 0px;
+    font-size: 14px;
+    opacity: 0;
+    width: 250px;
+    height: 80px;
+    line-height: 23px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.geschmacksrichtung:hover .unterueberschrift {
+    opacity: 1;
+    transition: 0.5s ease-out;
+}
+
+.geschmacksrichtung:hover .textkoerper {
+    opacity: 1;
+    transition: 0.5s ease-out;
+}
+
+
+/*Ebene 5: Quality*/
+
+.ebeneContainerQuality {
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 130px;
+    background-color: #f2f2f2;
+}
+
+#ebeneQuality {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#ebeneQuality #beschreibungContainerQuality {
+    width: 35%;
+    text-align: right;
+    align-items: center;
+    margin-top: -100px;
+}
+
+#beschreibungContainerQuality .textkoerper {
+    width: 440px;
+    float: right;
+    margin-top: 0px;
+}
+
+#bildPralinenContainerQuality {
+    width: 45%;
+}
+
+#bildPralinenContainerQuality img {
+    max-width: 95%;
+}
+
+
+/*Ebene 5: Gucci macht den Unterschied */
+
+.ebeneSlider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    height: 100%;
+    background-color: #1b1b1b;
+}
+
+#slide2,
+#slide3 {
+    display: none;
+}
+
+.ebeneSlider .ueberschrift {
+    color: white;
+}
+
+.ebeneSlider .textkoerper {
+    width: 450px;
+    height: 80px;
+    text-align: center;
+    ;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.sliderUnterueberschrift {
+    font-family: Segoe WPC, Segoe UI, Yu Gothic UI, Meiryo, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #707070;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.sliderIcon {
+    width: 150px;
+}
+
+.pfeilVor,
+.pfeilNext {
+    cursor: pointer;
+    position: absolute;
+    width: 40%;
+    color: #707070;
+    font-weight: 100;
+    font-size: 50px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.pfeilVor {
+    left: 0px;
+}
+
+.pfeilNext {
+    right: 0px;
+}
+
+.linien {
+    cursor: pointer;
+    height: 2.5px;
+    width: 80px;
+    margin: 0 5px;
+    background-color: #707070;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    bottom: 0;
+}
+
+.active,
+.linien:hover {
+    background-color: white;
+}
+
+.slides {
+    margin-top: 50px;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/*Ebene 7:Kaufaufforderung*/
+
+.ebeneKaufaufforderung {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: white;
+}
+
+.ebeneKaufaufforderung img {
+    margin-top: 30px;
+}
+
+.button {
+    background-color: #000000;
+    font-family: Segoe WPC, Segoe UI, Yu Gothic UI, Meiryo, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #f2f2f2;
+    padding: 10px;
+    width: 150px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.button:hover {
+    background-color: rgb(49, 49, 49);
+    transition: 0.3s ease all;
+}
+
+
+/*Ebene 8:Footer*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    padding-bottom: 110px;
+    background-color: #1b1b1b;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footerMenueContainer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#trennlinieFooter {
+    display: none;
+}
+
+.menueBlock {
+    width: 250px;
+}
+
+.accordion {
+    background-color: transparent;
+    font-family: Segoe WPC, Segoe UI, Yu Gothic UI, Meiryo, sans-serif;
+    font-size: 25px;
+    color: #999999;
+    font-weight: lighter;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    padding: 0px;
+}
+
+.block2,
+.block3 {
+    width: 180px;
+}
+
+input.hidden {
+    display: none;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+    text-align: left;
+    padding-left: 0px;
+}
+
+li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Segoe WPC, Segoe UI, Yu Gothic UI, Meiryo, sans-serif;
+    font-size: 14px;
+    color: #ECE1D6;
+    font-weight: 400;
+}
+
+.footerNewsletter {
+    width: 350px;
+    text-align: left;
+    color: #999999;
+    padding-right: 50px;
+}
+
+.footerNewsletter h2 {
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: Segoe WPC, Segoe UI, Yu Gothic UI, Meiryo, sans-serif;
+    margin-top: 0px;
+}
+
+.footerNewsletter p {
+    font-size: 12px;
+    color: #999999;
+    font-weight: 400;
+    font-family: Segoe WPC, Segoe UI, Yu Gothic UI, Meiryo, sans-serif;
+    margin-top: 0px;
+}
+
+#email {
+    margin-top: 10px;
+    width: 200px;
+    padding: 5px;
+    background-color: #000000;
+    border-color: black;
+}

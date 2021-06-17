@@ -59,7 +59,7 @@
     }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
     /*Header*/
     header {
         height: 400px;
@@ -578,7 +578,7 @@
     }
     .subtitle {
         margin-top: -5px;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 16px;
     }
     .ebeneVarietyHeader .textkoerper {

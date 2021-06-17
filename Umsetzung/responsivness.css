@@ -581,10 +581,6 @@
         font-size: 12px;
         line-height: 16px;
     }
-    .ebeneVarietyHeader .textkoerper {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
     .logo {
         top: 13px;
         width: 90px;
@@ -620,7 +616,7 @@
     }
     /*Typografie*/
     .textkoerper {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 20px;
     }
     .ueberschrift {
@@ -639,24 +635,29 @@
     }
     /*Ebene 2: Pleasure*/
     #beschreibungContainerPleasure .textkoerper {
-        font-size: 12px;
+        font-size: 14px;
     }
     #beschreibungContainerPleasure .ueberschrift {
         font-size: 22px;
     }
     /*Ebene 4: Variety*/
     .geschmacksrichtung .textkoerper {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 20px;
     }
     .ebeneVarietyHeader .textkoerper {
         padding-left: 20px;
         padding-right: 20px;
-        font-size: 12px;
+        font-size: 14px;
         margin-bottom: 20px;
     }
     .bildContainer img {
         width: 120px;
+        margin-top: 30px;
+    }
+    .ebeneVarietyHeader .textkoerper {
+        padding-left: 10px;
+        padding-right: 10px;
     }
     /*Ebene 5: Quality*/
     #bildPralinenContainerQuality {
@@ -671,7 +672,7 @@
     .ebeneSlider .textkoerper {
         max-width: 250px;
         height: 70px;
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 600;
     }
     .ebeneSlider .ueberschrift {

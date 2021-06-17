@@ -558,10 +558,6 @@
         width: 100%;
     }
     /*Ebene 5: Gucci macht den Unterschied */
-    .pfeilVor,
-    .pfeilNext {
-        display: none;
-    }
 }
 
 @media (max-width: 400px) {

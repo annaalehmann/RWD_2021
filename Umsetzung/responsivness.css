@@ -641,9 +641,6 @@
         font-size: 14px;
         line-height: 20px;
     }
-    .geschmacksrichtung .textkoerper {
-        margin-top: 20px;
-    }
     .ebeneVarietyHeader .textkoerper {
         padding-left: 10px;
         padding-right: 10px;
@@ -653,6 +650,7 @@
     .bildContainer img {
         width: 120px;
         margin-top: 10px;
+        margin-bottom: 10px;
     }
     /*Ebene 5: Quality*/
     #bildPralinenContainerQuality {

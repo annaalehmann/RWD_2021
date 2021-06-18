@@ -10,6 +10,30 @@
     <script src="slider.js"></script>
 </head>
 
+<script>
+    function elementZuSehen(element) {
+        var rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+    var objekte = document.querySelectorAll(".objektFade");
+
+    function callbackFunc() {
+        for (var i = 0; i < objekte.length; i++) {
+            if (elementZuSehen(objekte[i])) {
+                objekte[i].classList.add("objektFadeSichtbar");
+            }
+        }
+    }
+
+    window.addEventListener("load", callbackFunc);
+    window.addEventListener("scroll", callbackFunc);
+</script>
+
 <body>
     <header>
 
@@ -323,31 +347,5 @@
         }
     </script>
 </body>
-
-<script>
-    function elementZuSehen(element) {
-        var rect = element.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-
-
-    var objekte = document.querySelectorAll(".objektFade");
-
-    function callbackFunc() {
-        for (var i = 0; i < objekte.length; i++) {
-            if (elementZuSehen(objekte[i])) {
-                objekte[i].classList.add("objektFadeSichtbar");
-            }
-        }
-    }
-
-    window.addEventListener("load", callbackFunc);
-    window.addEventListener("scroll", callbackFunc);
-</script>
 
 </html>

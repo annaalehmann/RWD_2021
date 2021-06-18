@@ -528,9 +528,6 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-    .geschmacksrichtung .unterueberschrift {
-        margin-top: 10px;
-    }
     /*Ebene 5: Quality*/
     #ebeneQuality {
         flex-direction: column-reverse;

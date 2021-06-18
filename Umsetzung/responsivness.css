@@ -528,6 +528,9 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+    .geschmacksrichtung .unterueberschrift {
+        margin-top: 10px;
+    }
     /*Ebene 5: Quality*/
     #ebeneQuality {
         flex-direction: column-reverse;
@@ -649,9 +652,8 @@
     }
     .bildContainer img {
         width: 120px;
-        margin-top: 10px;
+        margin-top: 20px;
         margin-bottom: 0px;
-        background-color: red;
     }
     .geschmacksrichtung .unterueberschrift {
         margin-top: 10px;
